@@ -1,0 +1,52 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: consolas;
+  }
+
+.toggle{
+  height: 50px;
+  width: 80px;
+  border: 3px solid rgb(112, 112, 112);
+  border-radius: 45px;
+  position: relative;
+  top: 10vh;
+  background-color: red;
+}
+
+label{
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  left: 5px;
+  transition: all 0.5s;
+}
+
+input:checked + label{
+  transform: translateX(28px);
+}
+
+label::before{
+  content: "NO";
+  position: relative;
+  top: 10px;
+  left: 45px;
+  color: white;
+}
+
+
+input:checked + label::before{
+  content: "YES";
+  position: relative;
+  top: 10px;
+  left: -28px;
+  color: white;
+}
+
+.toggle-cb{
+  display: none;
+}
