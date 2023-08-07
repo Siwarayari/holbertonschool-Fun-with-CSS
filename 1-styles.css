@@ -1,0 +1,9 @@
+a {
+  text-decoration: none;
+  color: #6e0040;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.8s;
+}
+a:hover {
+  border-bottom-color: #6e0040;
+}
